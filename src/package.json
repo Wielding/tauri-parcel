@@ -1,0 +1,15 @@
+{
+  "name": "tauri-parcel",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "clean:output": "yarn rimraf dist",
+    "start": "yarn clean:output && parcel serve ./index.html",
+    "build": "yarn clean:output && parcel build ./index.html"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.7.0",
+    "parcel": "^2.7.0",
+    "rimraf": "^3.0.2"
+  }
+}
